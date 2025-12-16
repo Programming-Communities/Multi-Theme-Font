@@ -42,7 +42,8 @@ export type Theme =
   | 'vibrant-red'       // ✅ Added
   | 'cool-teal';        // ✅ Added
 
-export type ThemeConfigWithoutMetadata = Record<Theme, ThemeColors>;
+export type ThemeConfigWithoutMetadata = Record<string, ThemeColors>;
+
 export type ThemeConfigWithMetadata = Record<Theme, ThemeWithMetadata>;
 
 // UI option types
